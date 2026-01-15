@@ -1,0 +1,26 @@
+.addForm{
+  display:flex;
+  gap:12px;
+}
+
+.input{
+  flex:1;
+  height:44px;
+  padding:0 14px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  font-size:.95rem;
+}
+
+.btn{
+  height:44px;
+  padding:0 16px;
+  border-radius:12px;
+  border:0;
+  background: var(--primary);
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.btn:hover{ background: var(--primary-hover); }

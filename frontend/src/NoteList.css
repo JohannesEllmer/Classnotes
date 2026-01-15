@@ -1,0 +1,33 @@
+.noteList{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.noteItem{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 14px;
+  border:1px solid var(--border);
+  border-radius:12px;
+}
+
+.noteText{
+  flex:1;
+  font-size:.95rem;
+}
+
+.deleteBtn{
+  width:36px;
+  height:36px;
+  border-radius:10px;
+  border:0;
+  background: var(--danger);
+  color:#fff;
+  font-weight:700;
+  cursor:pointer;
+}
