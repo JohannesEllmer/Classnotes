@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'ClassNotes.Api/**'
+      - 'ClassNotes.api/**'
       - '.github/workflows/backend.yml'
 
 jobs:
