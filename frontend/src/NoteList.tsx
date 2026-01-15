@@ -1,6 +1,11 @@
-import "./NoteList.css";
+export type Note = { id: number; text: string };
 
-export default function NoteList({ notes, onDelete }) {
+type Props = {
+  notes: Note[];
+  onDelete: (id: number) => void;
+};
+
+export default function NoteList({ notes, onDelete }: Props) {
   return (
     <ul className="noteList">
       {notes.map((n) => (
@@ -12,7 +17,7 @@ export default function NoteList({ notes, onDelete }) {
             title="Löschen"
             onClick={() => onDelete(n.id)}
           >
-            ✕
+            X
           </button>
         </li>
       ))}

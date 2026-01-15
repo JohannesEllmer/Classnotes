@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import AddNoteForm from "./AddNoteForm.jsx";
-import NoteList from "./NoteList.jsx";
-import { getNotes, addNote, deleteNote } from "./api";
+import AddNoteForm from "../src/AddNoteForm";
+import NoteList from "../src/NoteList";
+import { getNotes, addNote, deleteNote } from "./Api";
+
 
 type Note = { id: number; text: string };
 

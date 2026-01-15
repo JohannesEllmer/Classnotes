@@ -1,10 +1,15 @@
 import { useState } from "react";
 import "./AddNoteForm.css";
 
-export default function AddNoteForm({ onAdd }) {
+interface AddNoteFormProps {
+  onAdd: (text: string) => void;
+}
+
+export default function AddNoteForm({ onAdd }: AddNoteFormProps) {
   const [text, setText] = useState("");
 
-  function handleSubmit(e) {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  e.preventDefault();
     e.preventDefault();
     if (!text.trim()) return;
     onAdd(text);

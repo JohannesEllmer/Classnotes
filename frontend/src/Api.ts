@@ -9,7 +9,7 @@ export async function getNotes() {
   return notes;
 }
 
-export async function addNote(text) {
+export async function addNote(text: string) {
   const res = await fetch(`${API_URL}/notes`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -18,7 +18,7 @@ export async function addNote(text) {
   return res.json();
 }
 
-export async function deleteNote(id) {
+export async function deleteNote(id: number) {
   const res = await fetch(`${API_URL}/notes/${id}`, {
     method: "DELETE",
   });
