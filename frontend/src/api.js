@@ -1,5 +1,5 @@
 //const API_URL = "http://localhost:5168"; // später Backend-URL
-const API_URL = "https://localhost:7028";
+const API_URL = "classnoteshons.azurewebsites.net";
 //const API_URL = "https://classnotes-api.azurewebsites.net";
 
 export async function getNotes() {
